@@ -3,8 +3,8 @@ import pandas as pd
 import tensorflow as tf
 import joblib
 
-scaler = joblib.load('../models/xG_scaler.pkl')
-model = tf.keras.models.load_model("../models/xG_predictor.keras")
+scaler = joblib.load('../../models/xG_scaler.pkl')
+model = tf.keras.models.load_model("../../models/xG_predictor.keras")
 
 def dist_to_gk(shot: pd.core.frame.DataFrame, track: pd.core.frame.DataFrame) -> float:
     """
